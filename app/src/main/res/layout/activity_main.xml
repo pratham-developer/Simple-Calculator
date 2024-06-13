@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/title"
+       android:text="@string/app_name"
+       android:textSize="40sp"
+       android:textAlignment="center"
+       android:fontFamily="serif"
+       android:textColor="@color/neon"
+       android:background="@color/blue"
+       android:textStyle="bold"
+       android:clickable="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <EditText
+       android:id="@+id/num1"
+       android:layout_marginTop="40dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:textAlignment="center"
+       android:inputType="numberDecimal"
+       android:hint="@string/num1_hint"
+       android:textColor="@color/neon"
+       android:textColorHint="#ADD9FF00"
+       android:layout_below="@id/title"
+       android:importantForAutofill="no"/>
+
+   <EditText
+       android:id="@+id/num2"
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:textAlignment="center"
+       android:inputType="numberDecimal"
+       android:hint="@string/num2_hint"
+       android:textColor="@color/neon"
+       android:textColorHint="#ADD9FF00"
+       android:layout_below="@id/num1"
+       android:importantForAutofill="no"/>
+   <Button
+       android:id="@+id/plusbut"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:text="@string/plus"
+       android:textSize="40sp"
+       android:layout_below="@id/num2"
+       android:layout_marginTop="50dp"
+       android:layout_marginStart="50dp"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
+
+   <Button
+       android:id="@+id/minusbut"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:text="@string/minus"
+       android:textSize="40sp"
+       android:layout_below="@id/num2"
+       android:layout_marginTop="50dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginEnd="100dp"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
+
+   <Button
+       android:id="@+id/mulbut"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:text="@string/multiply"
+       android:textSize="40sp"
+       android:layout_below="@id/plusbut"
+       android:layout_marginTop="50dp"
+       android:layout_marginStart="50dp"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
+
+   <Button
+       android:id="@+id/divbut"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:text="@string/divide"
+       android:textSize="40sp"
+       android:layout_below="@id/minusbut"
+       android:layout_marginTop="50dp"
+       android:layout_marginEnd="100dp"
+       android:layout_centerHorizontal="true"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
+
+   <Button
+       android:id="@+id/powbut"
+       android:layout_width="wrap_content"
+       android:layout_height="80dp"
+       android:text="@string/power"
+       android:textSize="18sp"
+       android:layout_below="@id/num2"
+       android:layout_marginTop="50dp"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="30dp"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
+
+   <Button
+       android:id="@+id/rembut"
+       android:layout_width="wrap_content"
+       android:layout_height="80dp"
+       android:text="@string/remainder"
+       android:textSize="18sp"
+       android:layout_alignParentEnd="true"
+       android:layout_below="@id/plusbut"
+       android:layout_marginTop="50dp"
+       android:layout_marginEnd="30dp"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
+
+
+   <TextView
+       android:id="@+id/result"
+       android:layout_marginTop="40dp"
+       android:layout_width="375dp"
+       android:layout_height="50dp"
+       android:textAlignment="center"
+       android:layout_centerHorizontal="true"
+       android:hint="@string/res_hint"
+       android:textColor="@color/neon"
+       android:textColorHint="#ADD9FF00"
+       android:textSize="20sp"
+       android:layout_below="@id/mulbut"
+       android:focusable="false"
+       android:textIsSelectable="false"/>
+
+
+
+
+</RelativeLayout>
