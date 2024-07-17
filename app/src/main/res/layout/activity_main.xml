@@ -138,6 +138,16 @@
        android:layout_below="@id/mulbut"
        android:focusable="false"
        android:textIsSelectable="false"/>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="80dp"
+       android:id="@+id/clrb"
+       android:layout_below="@id/result"
+       android:layout_centerHorizontal="true"
+       android:text="@string/clr"
+       android:textSize="18sp"
+       android:backgroundTint="@color/blue"
+       android:textColor="@color/neon"/>
 
 
 

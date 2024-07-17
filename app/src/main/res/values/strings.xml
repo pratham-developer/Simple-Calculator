@@ -9,4 +9,5 @@
     <string name="divide">÷</string>
     <string name="power">N1^N2</string>
     <string name="remainder">N1%N2</string>
+    <string name="clr">clear</string>
 </resources>

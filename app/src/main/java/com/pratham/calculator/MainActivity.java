@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView out;
     private Button bpow;
     private Button brem;
+    private Button clrbut;
     DecimalFormat way;
 
     public void solve(int i){
@@ -101,6 +102,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public void clearCommand(){
+        vib.vibrate(VibrationEffect.createPredefined(VibrationEffect.EFFECT_CLICK));
+        inp1.setText("");
+        inp2.setText("");
+        out.setText("");
+        inp1.requestFocus();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
         out = findViewById(R.id.result);
         bpow=findViewById(R.id.powbut);
         brem=findViewById(R.id.rembut);
+        clrbut=findViewById(R.id.clrb);
 
         title.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
        bdiv.setOnClickListener(v->solve(4));
        bpow.setOnClickListener(v->solve(5));
        brem.setOnClickListener(v->solve(6));
+       clrbut.setOnClickListener(v->clearCommand());
 
 
 
